@@ -1,0 +1,17 @@
+src
+test
+test.es5
+.git*
+.gitignore
+.eslintrc
+docs/
+examples/
+node_modules/
+bin/
+.DS_Store
+.travis.yml
+coverage/
+.coveralls.yml
+*.sh
+*.log
+
