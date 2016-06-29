@@ -1,0 +1,71 @@
+{
+  "name": "asynchronous-map",
+  "version": "0.0.1",
+  "description": "Simple lookup table data store that populates asyncronously",
+  "main": "lib/index.js",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "rules": {
+      "brace-style": [
+        "error",
+        "stroustrup"
+      ],
+      "comma-dangle": [
+        "error",
+        "only-multiline"
+      ],
+      "yoda": [
+        "off"
+      ]
+    },
+    "globals": {
+      "$": false
+    }
+  },
+  "scripts": {
+    "lint": "eslint src/**",
+    "build": "babel --presets es2015 src -d lib",
+    "test": "babel-node ./node_modules/.bin/isparta cover _mocha",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "lookup",
+    "map",
+    "async map",
+    "async-map",
+    "asynchronous-map",
+    "asynchronous map",
+    "delayed map",
+    "lookup table",
+    "async",
+    "asynchronous"
+  ],
+  "author": "N. Palani Kumanan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/palanik/asynchronous-map.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "devDependencies": {
+    "async": "^2.0.0-rc.6",
+    "babel-cli": "^6.7.7",
+    "babel-core": "^6.7.7",
+    "babel-preset-es2015": "^6.6.0",
+    "chai": "^3.5.0",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.0",
+    "eslint-plugin-jsx-a11y": "^1.2.0",
+    "eslint-plugin-react": "^5.1.1",
+    "isparta": "^4.0.0",
+    "mocha": "^2.5.3"
+  }
+}

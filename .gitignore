@@ -1,0 +1,8 @@
+lib/
+test/
+node_modules
+coverage
+*.log
+.DS_Store
+*.sh
+.coveralls.yml
