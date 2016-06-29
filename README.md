@@ -17,16 +17,16 @@ $ npm install asynchronous-map --save
 var AsyncMap = require('asynchronous-map');
 
 var userMap = new AsyncMap(function(key, callback) {
-	// Fetch data for key asynchronously (From a database, remote API etc.)
-	...
-	callback(null, value);	
+  // Fetch data for key asynchronously (From a database, remote API etc.)
+  ...
+  callback(null, value);
 });
 
 
 var userId1 = 'U1234';
 
 userMap.get(userId1, function(err, value) {
-	console.log(value);
+  console.log(value);
 });
 
 ```

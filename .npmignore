@@ -3,6 +3,7 @@ test
 test.es5
 .git*
 .gitignore
+.npmignore
 .eslintrc
 docs/
 examples/
